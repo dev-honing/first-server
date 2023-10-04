@@ -5,7 +5,7 @@ http
     let writeHeadObject = {
       "Content-Type": "http/html",
     };
-    response.writeHead(200, writeHeadObject);
+    request.writeHead(200, writeHeadObject);
     response.end("hello");
   })
   .listen(8080);
